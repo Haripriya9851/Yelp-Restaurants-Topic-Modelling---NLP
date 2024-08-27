@@ -22,18 +22,34 @@ On the other hand, **For higher ratings, people don't have a need to write a lon
 - Topic 22 is related to Music and clubbing
 - Topic 14 is related to hotel location and hospitality
 
-# Reviewing Positive Topics
+# Finding Positive and Negative Topics using LDA for Planet Hollywood Resort & Casino
 
-Comig to positive reviews, most of the topics have same frequent words meaning that there are no intense review that users have provided explaining a disappointing/upset situation.
 
-## Topic 1:
+Coming to positive reviews, most of the topics have same frequent words meaning that there are no intense review that users have provided explaining a disappointing/upset situation.
 
-nice, view, location, stay, casino, time, comfortable, clean, recommend,restaurant, eat, music, resort, spa, atmosphere, value, fee
+## Topic/Bubble 1: Reviewing Positive Topics
+
+Frequent words: nice, view, location, stay, casino, time, comfortable, clean, recommend,restaurant, eat, music, resort, spa, atmosphere, value, fee
 
 it's obvious that all these are totally happy and satisfied words from the users.
 
-Marketing director's point of view: It's evident that customers are happy with the food,casino, atmosphere,cleanliness, friendly staffs and accessible location of the hotel.
+**Marketing director's point of view:** It's evident that customers are happy with the food,casino, atmosphere,cleanliness, friendly staffs and accessible location of the hotel.
 
+## Topic/Bubble 5: Reviewing Negative Topics
+Frequent words(with lambda=0.87) :upgrade, offer, construction, outdated, staff, completely, clean, price, check, look, cigarrette-smoke, manager,rude
+
+It's evident that this topic is regarding the outlook, maintenance of the hotel and professionalism of staffs.
+
+**Marketing Director's Point of View:** Customers look for hotels with friendly, attentive staffs and check-out services. Also, renovated, clean and well maintained bright outlooks appeals customers.
+
+## Topic/Bubble 4: Reviewing Negative Topics
+Frequent words:(with lambda=0.4)
+
+front-desk, 1 hr, nightmare, unacceptable, wait, time, pay, staff, dirty, pool, clean, service, charge,resort_fee
+
+From the frequent words it's evident that this topic is on front desk assistance,room services and checkout experiences.
+
+**Marketing Director's point of view:** Rapid room sevices, good hospitality front desk assistance improves customer satisfaction
 ### Differences in topics mentioned by satisfied and dissatisfied customers
 
 There are topics where satisfied customers are happy with the resort's cleanliness, accessible location, amenities of the resort like casino, spa, pool, restaurant's food quality and comfortable stay at the resort.
@@ -48,22 +64,12 @@ Adding to that, staffs must be trained to be professional,friendly and can be pr
 
 # Difficulties encountered
 
-While working on this, I faced very less difficulty . Thanks to Helper functions and clearly laid out steps!
+While working on this, I faced very less difficulty . 
 
-File creation in Google drive folder from Colab
+1. **File creation in Google drive folder from Colab** : This is my first time working on google colab so creating a file in drive's root path worked for me but file creation inside a folder was not working for me. I'm not sure if it's doable! Now, i created everything in my root directory and moved it to desired folder manually. Would Appretiate your guidance on how to create file in folder using colab Pydrive code! :)
 
-This is my first time working on google colab so creating a file in drive's root path worked for me but file creation inside a folder was not working for me. I'm not sure if it's doable! Now, i created everything in my root directory and moved it to desired folder manually.
+2. **Finding Fair topic:** After implementation of LDA, there were many synonymns that were bundled together as a topic that made no sense for a "topic". So, looking for a meaningful topic was time consuming. Enjoyed it though.
 
-Would Appretiate your guidance on how to create file in folder using colab Pydrive code! :)
-
-Finding Fair topic:
-
-After implementation of LDA, there were many synonymns that were bundled together as a topic that made no sense for a "topic". So, looking for a meaningful topic was time consuming. Enjoyed it though.
-
-Finding "Right" approach for analysing pos and neg topics:
-
-Final part of pos and neg topic analysis on any resort made me examine attentively on the right approach to do this practise.
-
-Intially thought, it would be reasonable to generate topics based on all reviews that i had for selected hotel. But, it didn't capture the main problem that dissatisfied customers faced.
+3. **Finding "Right" approach for analysing pos and neg topics:** Final part of pos and neg topic analysis on any resort made me examine attentively on the right approach to do this practise. Intially thought, it would be reasonable to generate topics based on all reviews that i had for selected hotel. But, it didn't capture the main problem that dissatisfied customers faced.
 
 So, i changed the approach by filtering selected hotel's reviews based on polarity score as positive and negative. Then Building LDA model on these small review datasets capured the root cause of dissatisfaction of customers.
