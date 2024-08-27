@@ -1,6 +1,6 @@
 # Yelp-Restaurants-Topic-Modelling---NLP
 
-Using NLP based LDA-Gensim Topic modelling Algorithm to categorize Yelp restaurant reviews.  
+Using NLP based LDA-Gensim Topic modelling Algorithm to categorize Yelp restaurant reviews for prescriptive analysis for the hotel management.
 
 # Comparison of Review Polarity with Review Ratings 
 
@@ -9,6 +9,18 @@ Using NLP based LDA-Gensim Topic modelling Algorithm to categorize Yelp restaura
 **We can infer that people usually feel a need for writting when they are upset or angry with the service/experience.** They feel complaining may give a chance to fix issue. That's why alignment between least review ratings and polarity is higher.
 
 On the other hand, **For higher ratings, people don't have a need to write a long intense review that captures the mood of the writer.** They make neutral review about the experience even when they rate the resorts as 4 or 5. That's why alignment between high review ratings and polarity is neutral in the range of [0,0.7]
+
+# LDA Topic Model Result Analysis:
+## 3 Topics from Hotel Reviews Dataset
+**Topic 8:** topic 8's some of the frequent terms includes check, charge, pay, bill, extra, fee, wait, long queue, per_night, price, service, internet, $. From this we can infer that topic 8 is about billing/check-out experience of the users.
+
+**Topic 49:** Some of the frequent terms of topic 49 are mall,taxi, cafe, cabanas, center, south, reasonable_price,position, Pool, cabanas, loungues, cozy,airy. We can understand that topic 49 is about easily accessible fun and roaming places near hotel.
+
+**Topic 4:** Frequent terms of topic 4 are bathroom, tv, small, lighting, window, open, size, big, spacious, desk, chair. It's explainable that topic 4 is all about the room and components of room.
+
+**some other topics:**
+- Topic 22 is related to Music and clubbing
+- Topic 14 is related to hotel location and hospitality
 
 # Reviewing Positive Topics
 
