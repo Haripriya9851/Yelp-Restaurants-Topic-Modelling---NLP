@@ -1,6 +1,8 @@
 # Yelp-Restaurants-Topic-Modelling---NLP
 
 Using NLP based LDA-Gensim Topic modelling Algorithm to categorize Yelp restaurant reviews for prescriptive analysis for the hotel management.
+**code:** [LDA Topic Modelling Code](https://github.com/Haripriya9851/Yelp-Restaurants-Topic-Modelling---NLP/blob/main/Sentiment%20Analysis%20and%20Topic%20Modeling%20using%20NLP.ipynb)
+
 
 # Comparison of Review Polarity with Review Ratings 
 
